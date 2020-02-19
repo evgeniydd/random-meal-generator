@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px 0;
+  min-height: 100vh;
+  font-family: 'Inconsolata', monospace;
+}
+button,
+button:active,
+button:focus {
+  border: none;
+  outline: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.button-primary {
+  margin: 0.5em 0;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  width: 135px;
+  height: 40px;
+  background: #eb4410;
+  border-radius: 5px;
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.2s ease-out;
+}
+.button-primary:hover {
+  background: #c44f2a;
+}
+.button-primary:active {
+  background: #eb4410;
+}
+.logo {
+  max-width: 20%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-size: 19px;
+  line-height: 25px;
+  color: #3c3c3c;
+}
+
+.rows {
+  display: flex;
+}
+/* Left side */
+img {
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+.meal-title {
+  padding: 1.2rem 0;
+  font-weight: bold;
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+
+.category,
+.area {
+  padding-bottom: 0.8rem;
+}
+.category span,
+.area span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ingredients-title {
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.ingredients {
+  margin: 0.5rem 1.1rem;
+  list-style-type: circle;
+  font-size: 1.1rem;
+}
+
+.ingredients li {
+  margin-bottom: 0.8rem;
+}
+
+/* Right side */
+.information {
+  width: 60%;
+  text-align: justify;
+}
+.information p {
+  margin: 5rem 0;
+  font-size: 1.1rem;
+  line-height: normal;
+}
+
+/* Video section */
+.video {
+  margin: 1rem 0;
+}
+.video h3 {
+  text-transform: uppercase;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-side h2 {
+    text-align: center;
+  }
+  .left-side img {
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  .meal-title {
+    font-size: 1.5rem;
+  }
+
+  img {
+    max-width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .information {
+    width: 100%;
+    text-align: justify;
+  }
+  .information p {
+    margin: 1rem 0;
+  }
+}
